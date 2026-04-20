@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class CheckboxTests {
 
-    @Test
+    @Test(groups = "Frontend")
     public void testCheckboxes() throws InterruptedException {
         Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
@@ -24,6 +24,10 @@ public class CheckboxTests {
             }
         }
 
-        Assert.fail("Test failed intentionally");
+        for (SelenideElement checkbox : $$("input[type='checkbox']")) {
+            Assert.assertFalse(checkbox.isSelected(), "Checkbox is still selected");
+        }
+
+        closeWebDriver();
     }
 }
