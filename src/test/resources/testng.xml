@@ -1,14 +1,8 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Amazon Suite" parallel="false">
-    <test name="Amazon Books Tests">
-        <groups>
-            <run>
-                <include name="smoke"/>
-                <include name="regression"/>
-            </run>
-        </groups>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Selenide Homework Suite">
+    <test name="Selenide Homework Tests">
         <classes>
-            <class name="com.example.tests.AmazonBooksTest"/>
+            <class name="org.example.tests.SelenideHomeworkTests"/>
         </classes>
     </test>
 </suite>

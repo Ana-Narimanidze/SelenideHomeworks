@@ -1,14 +1,15 @@
 target/
+build/
 .idea/
 *.iml
-untitled/
 allure-results/
-allure-report/
+.DS_Store
 
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-.kotlin
+!**/src/main/**/build/
+!**/src/test/**/build/
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
@@ -33,12 +34,6 @@ allure-report/
 /dist/
 /nbdist/
 /nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
-
-### Mac OS ###
-.DS_Store
