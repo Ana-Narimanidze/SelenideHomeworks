@@ -1,5 +1,6 @@
 target/
 .idea/
 *.iml
-untitled/
 allure-results/
+allure-report/
+.DS_Store
