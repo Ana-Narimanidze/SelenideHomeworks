@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="SelenideSuite" parallel="methods" thread-count="2">
+    <test name="GroupedTests">
+        <groups>
+            <run>
+                <include name="Frontend"/>
+                <include name="Backend"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="org.example.CheckboxTests"/>
+            <class name="org.example.RadioButtonTests"/>
+        </classes>
+    </test>
+</suite>
