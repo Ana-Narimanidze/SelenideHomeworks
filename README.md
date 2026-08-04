@@ -1,21 +1,50 @@
-# SelenideHomeworks
+# Selenide Homeworks
 
-Homework project with Selenide, TestNG, Allure and POM structure.
+Automation testing project built with Java, Selenide, TestNG and Allure.
 
-## Structure
+This repository contains homework tasks completed during my QA Automation learning journey. The project follows the Page Object Model (POM) design pattern and demonstrates clean test structure, reusable components and reporting with Allure.
 
-- `pages` - page objects and selectors
-- `steps` - reusable test steps with `@Step`
-- `tests` - TestNG tests with Allure annotations
+---
 
-## Run tests
+## Technologies
 
-```bash
+- Java
+- Maven
+- Selenide
+- Selenium WebDriver
+- TestNG
+- Allure Report
+
+---
+
+## Project Structure
+
+src/
+├── pages
+├── tests
+├── steps
+└── utils
+
+
+
+Features
+UI automation tests
+Page Object Model (POM)
+Reusable test methods
+TestNG annotations
+Allure reporting
+Easy project structure
+
+
 mvn clean test
-```
 
-## Allure report
-
-```bash
 allure serve target/allure-results
-```
+
+
+Author
+
+Ana Narimanidze
+
+QA Automation Engineer
+
+
